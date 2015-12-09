@@ -14,6 +14,12 @@
                 <GradientStop Color="#FF0096FF" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="1*"/>
@@ -21,12 +27,12 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
-        <TextBox PlaceholderText="请输入账号" Grid.Row="1" Height="30" Width="200"  VerticalAlignment="Bottom" InputScope="AlphanumericPin" />
-        <PasswordBox PlaceholderText="请输入密码" Grid.Row="2" Height="30" Width="200" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
-        <Button Name="dneglu" Content="登陆" Background="#FF199BEA" Grid.Row="3" HorizontalAlignment="Center" Width="100" />
-        <Button Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="账号注册" FontSize="12" Foreground="Red" Click="zhuce_Click" Background="{x:Null}"  />
-        <Button Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="忘记密码" FontSize="12" Foreground="Red"  Click="zhaohui_Click" Background="{x:Null}"/>
-        <Image HorizontalAlignment="Center" Grid.Row="0" Height="100"  VerticalAlignment="Bottom" Width="100" Source="Assets/windows-8.png"/>
+        <TextBox PlaceholderText="请输入账号" Grid.Row="1" Grid.Column="1" Height="30" Width="200"  VerticalAlignment="Bottom" InputScope="AlphanumericPin" />
+        <PasswordBox PlaceholderText="请输入密码" Grid.Column="1" Grid.Row="2" Height="30" Width="200" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+        <Button Name="dneglu" Grid.Column="1" Content="登陆" Background="#FF199BEA" Grid.Row="3" HorizontalAlignment="Center" Width="100" />
+        <Button Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Content="账号注册" FontSize="12" Foreground="Red" Click="zhuce_Click" Background="{x:Null}"  />
+        <Button Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Content="忘记密码" FontSize="12" Foreground="Red"  Click="zhaohui_Click" Background="{x:Null}"/>
+        <Image HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0" Height="100"  VerticalAlignment="Bottom" Width="100" Source="Assets/windows-8.png"/>
     </Grid>
 
 </Page>

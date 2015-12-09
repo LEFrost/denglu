@@ -27,7 +27,7 @@ namespace App25
             this.InitializeComponent();
         }
 
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        private void QuXiao_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));
         }

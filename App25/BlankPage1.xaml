@@ -20,10 +20,10 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="取消" Foreground="White" FontWeight="Bold" FontSize="18" SelectionChanged="TextBlock_SelectionChanged"/>
         <TextBlock Text="账号注册" Foreground="Red" FontSize="25" Height="40" VerticalAlignment="Top" Grid.Row="1" HorizontalAlignment="Center" />
         <TextBox PlaceholderText="输入你的邮箱" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" />
         <PasswordBox PlaceholderText="输入你的密码" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="200"/>
         <Button Content="确定" Grid.Row="2" HorizontalAlignment="Center" Width="100" Background="#FF0096FF"/>
+        <Button Content="取消" Click="QuXiao_Click" Foreground="White" FontSize="20" Padding="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Grid>
 </Page>
